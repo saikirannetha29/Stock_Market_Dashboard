@@ -27,10 +27,12 @@ from utils.data_loader import (
     fetch_stock_data, fetch_stock_info,
     fetch_multiple_stocks, get_top_movers,
 )
+
 from utils.indicators import (
     apply_all_indicators, add_sma, add_ema,
     add_rsi, add_macd, add_bollinger_bands,
 )
+
 from utils.charts import (
     candlestick_chart, line_chart_with_indicators,
     rsi_chart, macd_chart,
@@ -38,13 +40,13 @@ from utils.charts import (
     daily_returns_chart, cumulative_returns_chart, volatility_chart,
     portfolio_pie_chart,
 )
+
 from utils.database import (
     initialize_database,
     save_search, get_recent_searches, clear_search_history,
     add_to_watchlist, get_watchlist, remove_from_watchlist,
     add_to_portfolio, get_portfolio, remove_from_portfolio,
 )
-
 # ── Page configuration ────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Stock Market Dashboard",
